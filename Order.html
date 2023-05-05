@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SnacksViet</title>
+        <link href="stylesheet.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body id="order">
+        <script src = "script-form.js"></script>
+        <header>
+            <nav>
+                    <a href="Index.html" class="navbar-link">Home</a>
+                    <a href="AboutUs.html" class="navbar-link">About us</a>
+                    <a href="OurProducts.html" class="navbar-link">Our products</a>
+                    <a href="Career.html" class="navbar-link">Career</a>
+            </nav>           
+        </header>
+        <div class="content">
+            <form action = "#" name="testForm">
+                <div class="form">
+                    <div class="h7">
+                        <span>Order Form</span>
+                    </div>
+                    <div class="input-field">
+                        <label>First Name</label>
+                        <input type="text" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="input-field">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Enter your last name" required>
+                    </div>
+                    <div class="input-field">
+                        <label>Age</label> 
+                        <input type="text" placeholder="Enter your age" required>
+                    </div>
+                    <div class="input-field">
+                        <label>Delivery Address</label>
+                        <input type="text" placeholder="Enter your address" required>
+                    </div>
+                    <div class="input-field">
+                        <label>Mobile Number</label>
+                        <input type="text" placeholder="Enter your Vietnamese mobile number" required>
+                    </div>
+                    <div class="spacing--24"></div>
+                    <div class="quantities">
+                        <table class = "center">
+                            <tr>
+                                <th style="width:60%">Items</th>
+                                <th style="width:25%">Item Choice</th>
+                                <th>Quantity</th>
+                            </tr>
+                            <tr>
+                                <td><img class="card-img" alt="bánh tráng Vietnam" 
+                                    src="https://images.unsplash.com/photo-1653222561651-aac8a71a7569?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+        
+                                </td>
+                                <td><input type="checkbox" value="Bánh tráng">Bánh tráng</td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><img class="card-img" alt="Vietnamese deep-fried skewers" 
+                                    src="https://images.unsplash.com/photo-1622919946352-8ee892a6cd00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                                   
+                                </td>
+                                <td><input type="checkbox" value="Xiên bẩn">Xiên bẩn</td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><img class="card-img" alt="Vietnamese coffee on a table" 
+                                    src="https://images.unsplash.com/photo-1643250094739-408e029fb002?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80">
+                                    
+                                </td>
+                                <td><input type="checkbox" value="Coffee">Coffee</td>
+                                <td><input type="text"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="spacing--40"></div>
+                    <div style="display: flex; align-items: stretch; gap: 16px; justify-content: center;" id="form-button">
+                        <button style="flex-basis: 64px; background-color: white; color: black;" onclick="reset()">Reset</button>
+                        <button style="flex-basis: 64px;" onclick="send()">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <footer>
+            <h1 style="color: white;">SnacksViet</h1>
+            <div class="content" style="padding: 0;">
+                <div style="box-sizing: border-box;"> 
+                    <div class="h5">About us</div>
+                    <p style="color: #acaeb1;">
+                        We take pride in offering an extensive range 
+                        of authentic snacks that are sure to satisfy 
+                        your cravings for a taste of Vietnam.
+                    </p>
+                </div>
+                <div style="box-sizing: border-box;">
+                    <div class="h5">Contact</div>
+                    <p style="color: #acaeb1;">hello@snacksviet.vn <br> Tel: (84) 08408408</p>
+                </div>
+            </div>
+            <div class="spacing--40"></div>
+            <p style="color: #828282;">Since 24/02/2023 - Copyright 2023 SnacksViet</p>
+        </footer>
+    </body>
+</html>

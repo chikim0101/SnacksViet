@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SnacksViet</title>
+        <link href="stylesheet.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body id="homepage">
+        <header>
+            <nav>
+                    <a href="Index.html" class="navbar-link">Home</a>
+                    <a href="AboutUs.html" class="navbar-link">About us</a>
+                    <a href="OurProducts.html" class="navbar-link">Our products</a>
+                    <a href="Career.html" class="navbar-link">Career</a>
+            </nav>           
+        </header>
+        <div class="content">
+            <div class="slider" style="flex: 50%;">
+                <img style="box-sizing: border-box;" class="card-img" alt="Vietnamese flag" src="https://images.unsplash.com/photo-1582281433009-08a8ad6d54dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                <img style="box-sizing: border-box;" class="card-img" alt="Packs of bánh tráng" src="https://images.unsplash.com/photo-1653222543508-fec99c4a6a1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                <img style="box-sizing: border-box;" class="card-img" alt="Packs of bánh tráng" src="https://images.unsplash.com/photo-1555921015-5532091f6026?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                <script>
+                    let slideIndex = 0;
+                    function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("card-img");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {slideIndex = 1}
+                    x[slideIndex-1].style.display = "block";
+                    setTimeout(carousel, 3000); // Change image every 3 seconds
+                    }
+                    carousel();
+                </script>
+            </div>
+            <div style="flex: 40%; flex-wrap: wrap;">
+                <div class="h1" style="color: rgb(188, 0, 0);">Welcome to SnacksViet</div>
+                <p style="width: 100%;">Welcome to our online snacks retail shop, where we specialize in 
+                bringing you the authentic taste of Vietnam right to your doorstep. 
+                Whether you're a Vietnamese living abroad, or simply someone who loves 
+                to indulge in delicious snacks from around the world, we have something 
+                for everyone.
+                </p>
+                <a href="OurProducts.html" style="color: black; font-weight: 600;">Explore our products</a>
+            </div>
+        </div>
+        
+        <footer>
+            <h1 style="color: white;">SnacksViet</h1>
+            <div class="content" style="padding: 0;">
+                <div style="box-sizing: border-box;"> 
+                    <div class="h5">About us</div>
+                    <p style="color: #acaeb1;">
+                        We take pride in offering an extensive range 
+                        of authentic snacks that are sure to satisfy 
+                        your cravings for a taste of Vietnam.
+                    </p>
+                </div>
+                <div style="box-sizing: border-box;">
+                    <div class="h5">Contact</div>
+                    <p style="color: #acaeb1;">hello@snacksviet.vn <br> Tel: (84) 08408408</p>
+                </div>
+            </div>
+            <div class="spacing--40"></div>
+            <p style="color: #828282;">Since 24/02/2023 - Copyright 2023 SnacksViet</p>
+        </footer>
+    </body>
+</html>
